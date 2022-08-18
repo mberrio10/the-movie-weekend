@@ -1,0 +1,40 @@
+.row {
+  margin-left: 3rem;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 3rem;
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  max-width: 30rem;
+  object-fit: contain;
+  margin-right: 1rem;
+  transition: transform 450ms;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.row__posterLarge {
+  max-height: 25rem;
+}
+
+.row__posterLarge:hover {
+  transform: scale(1.09);
+  opacity: 1;
+}
